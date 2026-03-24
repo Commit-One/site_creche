@@ -1,5 +1,6 @@
 const menuToggle = document.getElementById('menuToggle');
 const nav = document.getElementById('nav');
+const anoSpan = document.getElementById('ano');
 
 if (menuToggle && nav) {
   menuToggle.addEventListener('click', () => {
@@ -14,4 +15,9 @@ if (menuToggle && nav) {
       menuToggle.setAttribute('aria-expanded', 'false');
     });
   });
+}
+
+if (anoSpan) {
+  const currentYear = new Date().getFullYear();
+  anoSpan.textContent = currentYear;
 }
