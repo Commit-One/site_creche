@@ -87,6 +87,7 @@ button:focus-visible {
   position: sticky;
   top: 0;
   z-index: 100;
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   background: rgba(255, 255, 255, 0.82);
   border-bottom: 1px solid rgba(33, 79, 53, 0.08);
@@ -868,6 +869,34 @@ button:focus-visible {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.contact-map-frame {
+  border: 0;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.developer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.developer-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 /* quero deixar o fundo da logo ..assets/commitOne.jpeg transparente */
