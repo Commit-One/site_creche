@@ -225,15 +225,17 @@
             </p>
 
             <div class="contact-info-list">
-              <a
-                class="contact-line"
-                href="https://wa.me/5521996917756?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Creche%20e%20Escola%20Fazendinha."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span class="icon icon-whatsapp dark"></span>
-                <span>(21) 99691-7756</span>
-              </a>
+              <div class="contact-phones">
+                <a
+                  class="contact-line"
+                  href="https://wa.me/5521996917756?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Creche%20e%20Escola%20Fazendinha."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="icon icon-whatsapp dark"></span>
+                  <span>(21) 99691-7756</span>
+                </a>
+              </div>
 
               <a
                 class="contact-line"
@@ -242,7 +244,17 @@
                 rel="noopener noreferrer"
               >
                 <span class="icon icon-instagram"></span>
-                <span>@cefazendinhaoficial</span>
+                <span>Instagram | @cefazendinhaoficial</span>
+              </a>
+
+              <a
+                class="contact-line"
+                href="mailto:cefazendinha@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="icon icon-mail"></span>
+                <span>cefazendinha@gmail.com</span>
               </a>
 
               <a
@@ -252,7 +264,7 @@
                 rel="noopener noreferrer"
               >
                 <span class="icon icon-map"></span>
-                <span>R. Carna&uacute;ba, 438 - Senador Camar&aacute;, Rio de Janeiro - RJ, 21842-010</span>
+                <span>Rua Carnaúba, 438 - Senador Camará, Rio de Janeiro - RJ</span>
               </a>
             </div>
 
@@ -331,39 +343,67 @@
   </main>
 
   <footer class="footer footer-soft">
-    <div class="container footer-soft-content">
-      <div>
-        <strong>Creche e Escola Fazendinha</strong>
-        <p>Educa&ccedil;&atilde;o infantil com carinho, cuidado e acolhimento.</p>
+    <div class="container footer-content">
+      <!-- Left Column -->
+      <div class="footer-left">
+        <div class="footer-brand">
+          <h3>Creche e Escola Fazendinha</h3>
+          <p>Educa&ccedil;&atilde;o infantil com carinho, cuidado e acolhimento.</p>
+        </div>
+        <div class="footer-copyright">
+          &copy; <span id="ano"></span> Creche e Escola Fazendinha
+        </div>
       </div>
-      <a
-        href="https://wa.me/5521996917756?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20Creche%20e%20Escola%20Fazendinha."
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span class="icon icon-whatsapp dark"></span> Entrar em contato
-      </a>
-    </div>
 
-    <div class="container footer-bottom">
-      <span>&copy; <span id="ano"></span> Creche e Escola Fazendinha</span>
-      <a
-        href="https://api.whatsapp.com/send/?phone=21964511955&text&type=phone_number&app_absent=0"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="developer-link"
-        aria-label="Desenvolvido por CommitOne Systems"
-      >
-      <span>Desenvolvido por</span>
-      <img
-        src="assets/commitOne.png"
-        alt="CommitOne Systems"
-        class="developer-logo"
-      />
-      </a>
+      <!-- Right Column -->
+      <div class="footer-right">
+        <!-- Contact Section -->
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <div class="footer-links">
+            <a
+              href="https://wa.me/5521996917756?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20Creche%20e%20Escola%20Fazendinha."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <span class="icon icon-whatsapp dark"></span>
+              <span>Entrar em contato</span>
+            </a>
+            <a
+              href="https://www.instagram.com/crecheescolafazendinha/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <span class="icon icon-instagram dark"></span>
+              <span>Seguir no Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Developer Section -->
+        <div class="footer-developer">
+          <span class="developer-label">Desenvolvido por</span>
+          <a
+            href="https://api.whatsapp.com/send/?phone=21964511955&text&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Desenvolvido por CommitOne Systems"
+            class="developer-link"
+          >
+            <img
+              src="assets/commitOne.png"
+              alt="CommitOne Systems"
+              class="developer-logo"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="main.js"></script>
 </body>
 </html>
