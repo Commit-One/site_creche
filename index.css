@@ -40,6 +40,22 @@ body {
   overflow-x: hidden;
 }
 
+.skip-link {
+  position: absolute;
+  top: -44px;
+  left: 16px;
+  z-index: 2000;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: var(--green-900);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -572,6 +588,12 @@ button:focus-visible {
     box-shadow: var(--shadow);
   }
 
+  .nav a {
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+  }
+
   .nav.open {
     display: flex;
   }
@@ -589,6 +611,19 @@ button:focus-visible {
 
   .hero-card::before {
     inset: 14px -8px -8px 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }
 
