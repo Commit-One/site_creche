@@ -6,8 +6,8 @@ Escopo inspecionado: `index.html`, `index.css`, `main.js`, `readme.md`, estrutur
 O projeto apresenta **boa base visual, identidade consistente e cuidados iniciais de acessibilidade** (skip-link, labels, `aria-expanded`, `rel="noopener noreferrer"`).
 
 Por outro lado, há pontos relevantes para elevar maturidade:
-- **Defeito de marcação HTML** (fechamento de tag indevido).
-- **Qualidade textual** (erros de concordância e consistência de acentuação/entidades).
+- **Defeito de marcação HTML** (fechamento de tag indevido). //corrigido
+- **Qualidade textual** (erros de concordância e consistência de acentuação/entidades). //corrigido
 - **CSS com trechos legados/não utilizados e redefinições duplicadas** (manutenibilidade).
 - **Dependência externa sem fallback/SRI** (resiliência e segurança).
 - **Lacunas de SEO técnico e governança de qualidade** (ausência de pipeline de validação/lint/testes automatizados).
@@ -39,11 +39,6 @@ Por outro lado, há pontos relevantes para elevar maturidade:
 
 ## P0 — Alta prioridade
 
-### A1) Tag HTML com fechamento inválido
-- **Evidência:** no bloco “Sobre a Fazendinha”, há `</span>` sobrando dentro do `<h2>`.
-- **Impacto:** risco de inconsistência de renderização/parse e ruído em validações.
-- **Correção recomendada:** remover `</span>` indevido.
-
 ### A2) Dependência externa sem SRI/fallback (`ScrollReveal` via CDN)
 - **Evidência:** script carregado de `https://unpkg.com/scrollreveal` sem `integrity` e sem fallback local.
 - **Impacto:** disponibilidade e supply-chain risk; se o CDN falhar, animações deixam de funcionar (degradação parcial).
@@ -66,10 +61,6 @@ Por outro lado, há pontos relevantes para elevar maturidade:
 - **Impacto:** comportamento dependente de ordem, maior custo cognitivo e risco de regressão visual.
 - **Correção recomendada:** consolidar blocos por componente/seção e reduzir overrides dispersos.
 
-### B3) Qualidade textual (gramática/concordância)
-- **Evidência:** frase com “cada crianças” (concordância incorreta) e variação mista no padrão de entidades/acentos.
-- **Impacto:** percepção de qualidade da marca e credibilidade.
-- **Correção recomendada:** revisão editorial completa com checklist linguístico.
 
 ### B4) SEO técnico básico incompleto
 - **Evidência:** ausência de Open Graph/Twitter Cards/canonical/schema markup.
@@ -92,7 +83,7 @@ Por outro lado, há pontos relevantes para elevar maturidade:
 ## 4) Oportunidades de melhoria (roadmap sugerido)
 
 ### Sprint 1 (rápido, alto valor)
-1. Corrigir markup inválido e revisão ortográfica.
+1. Corrigir markup inválido e revisão ortográfica. ### Feito
 2. Limpar CSS órfão e consolidar regras duplicadas.
 3. Adicionar validação automática básica no CI.
 
